@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  /*z-index: 10;*/
+  transition: height 0.3s linear;
+  background-color: black; /*maroon*/
+  line-height: 50px;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px; 
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.button{
+  /*light blue darken-3*/
+  background-color: #0277BD;
+  border-style: none;
+}
+
+.button.button-reservation {
+    position: relative;
+    /*top: 15px;*/
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+}
+
+.button.button-add {
+  height: 45px;
+  width: 90px;
+  color: white;
+}
+
+.button.button-right {
+  float: right;
+}
+
+.main{
+    display: flex;
+    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+    width: 100vw;
+    color: black;
+}
+
+.card{
+  background: white;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  width: 400px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.25);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.20);
+}
+
+.car-img-container{
+    max-width: 300px;
+    height: 350px;
+    left: 0px;
+    right: 0px;
+}
+
+.form {
+  width: 100%;
+}
+
+.col1 {
+    text-align: left;
+    width: 12%;
+    line-height: 25px;
+}
+.col2 {
+    text-align: left;
+    width: 100%;
+}
+
+#btn {
+    top: 30px;
+    right: 20px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reservelist {
+  table-layout: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkout-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
